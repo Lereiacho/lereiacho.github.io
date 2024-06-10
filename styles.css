@@ -34,7 +34,7 @@ body {
   .navbar a {
       float: left;
       display: block;
-      color: #FFFFFF;
+      color: #333;
       text-align: center;
       padding: 14px 20px;
       text-decoration: none;
@@ -42,5 +42,4 @@ body {
 
     .navbar a:hover {
         background-color: #ddd;
-        color: #FFFFFF;
     }
