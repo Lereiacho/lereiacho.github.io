@@ -1,16 +1,15 @@
-/* Make images and videos rounded */
 img, video {
-  border-radius: 10px; /* Adjust the value to increase or decrease the roundness */
+    border-radius: 10px; /* Adjust the value to increase or decrease the roundness */
 }
 
 /* Make the website less square */
 body {
-    color: #FFFFFF;
+    color: #000000; /* Set text color to black for readability */
     margin: 0;
     padding: 0;
-    height: 200vh; /* Adjust the height as needed */
+    min-height: 100vh; /* Use min-height to ensure content height */
     background-color: #f0f0f0; /* Fallback background color */
-    overflow-x: hidden;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .background-image {
@@ -26,31 +25,44 @@ body {
     transform: translate(-50%, -50%);
     z-index: -1;
 }
-  .navbar {
-            background-color: #FFFFFF;
-            overflow: hidden;
+
+.navbar {
+    background-color: #FFFFFF;
+    overflow: hidden;
+    position: fixed; /* Fix the navbar at the top */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-  .navbar a {
-      float: left;
-      display: block;
-      color: #333;
-  .video-gallery {
+.navbar a {
+    float: left;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+}
+
+.video-gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+    padding: 20px;
+    margin-top: 60px; /* Add margin to avoid overlapping with the fixed navbar */
 }
 
 .video-gallery video {
     width: 300px;
     height: auto;
 }
-      text-align: center;
-      padding: 14px 20px;
-      text-decoration: none;
-  }
 
-    .navbar a:hover {
-        background-color: #ddd;
-    }
+.about-us {
+    padding: 20px;
+    margin-top: 20px;
+}
