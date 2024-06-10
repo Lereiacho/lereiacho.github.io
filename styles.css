@@ -10,7 +10,7 @@ body {
     padding: 0;
     height: 200vh; /* Adjust the height as needed */
     background-color: #f0f0f0; /* Fallback background color */
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .background-image {
