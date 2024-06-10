@@ -35,6 +35,17 @@ body {
       float: left;
       display: block;
       color: #333;
+  .video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.video-gallery video {
+    width: 300px;
+    height: auto;
+}
       text-align: center;
       padding: 14px 20px;
       text-decoration: none;
