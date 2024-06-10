@@ -5,7 +5,7 @@ img, video {
 
 /* Make the website less square */
 body {
-    color: white;
+    color: #FFFFFF;
     margin: 0;
     padding: 0;
     height: 200vh; /* Adjust the height as needed */
