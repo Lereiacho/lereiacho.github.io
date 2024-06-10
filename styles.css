@@ -1,0 +1,10 @@
+/* Make images and videos rounded */
+img, video {
+  border-radius: 10px; /* Adjust the value to increase or decrease the roundness */
+}
+
+/* Make the website less square */
+body {
+  border-radius: 20px; /* Adjust the value to increase or decrease the roundness of the entire website */
+  overflow: hidden; /* This prevents content from overflowing the rounded corners */
+}
