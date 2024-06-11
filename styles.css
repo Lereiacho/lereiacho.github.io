@@ -18,20 +18,6 @@ body {
     height: 100vh;
 }
 
-.background-image {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    background-image: url('lereiacho_logo.png'); /* Replace 'your-image.jpg' with the path to your image */
-    background-size: cover;
-    background-position: center;
-    filter: blur(7px) brightness(40%); /* Adjust blur and brightness levels */
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
 
 .navbar {
     background-color: #FFFFFF;
