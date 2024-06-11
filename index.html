@@ -48,6 +48,42 @@
             Your browser does not support the video tag.
         </video>
     </div>
+
+        <h1>Subscribe to Video Alerts</h1>
+    <button id="subscribeButton">Subscribe</button>
+    <ul id="emailList"></ul>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const emailList = document.getElementById('emailList');
+            const storedEmails = JSON.parse(localStorage.getItem('emails')) || [];
+
+            const updateEmailList = () => {
+                emailList.innerHTML = '';
+                storedEmails.forEach(email => {
+                    const li = document.createElement('li');
+                    li.textContent = email;
+                    emailList.appendChild(li);
+                });
+            };
+
+            document.getElementById('subscribeButton').addEventListener('click', () => {
+                const email = prompt('Please enter your email address:');
+                if (email && !storedEmails.includes(email)) {
+                    storedEmails.push(email);
+                    localStorage.setItem('emails', JSON.stringify(storedEmails));
+                    updateEmailList();
+                    alert('Subscribed successfully!');
+                } else if (storedEmails.includes(email)) {
+                    alert('You are already subscribed!');
+                }
+            });
+
+            updateEmailList();
+        });
+    </script>
+        <br>
+        <br>
         <div id = 'About Us' class = 'About Us'></div>
 
         <h3>About Lereiacho</h3>
