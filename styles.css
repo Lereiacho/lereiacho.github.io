@@ -51,7 +51,7 @@ body {
 .video-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 1px;
     justify-content: center;
     padding: 20px;
     margin-top: 60px; /* Add margin to avoid overlapping with the fixed navbar */
