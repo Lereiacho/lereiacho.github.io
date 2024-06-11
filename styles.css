@@ -10,6 +10,12 @@ body {
     min-height: 100vh; /* Use min-height to ensure content height */
     background-color: #f0f0f0; /* Fallback background color */
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-image: url('path/to/your/image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
 }
 
 .background-image {
