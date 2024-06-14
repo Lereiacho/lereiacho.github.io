@@ -9,6 +9,30 @@
         <link rel="stylesheet"  href="styles.css">
     </head>
     <body>
+        <script>
+            // List of songs
+            const songs = [
+                '01-V'ohavto.mpg'
+            ];
+    
+            let currentSong = 0;
+    
+            // Create an audio element
+            const audio = new Audio();
+            audio.src = songs[currentSong];
+            audio.autoplay = true;
+            audio.loop = false;
+    
+            // Function to play the next song
+            audio.addEventListener('ended', () => {
+                currentSong = (currentSong + 1) % songs.length;
+                audio.src = songs[currentSong];
+                audio.play();
+            });
+    
+            // Start playing
+            audio.play();
+        </script>
         <div class="navbar">
             <a href="#home">Home</a>
             <a href="#video-gallery">Past Videos</a>
