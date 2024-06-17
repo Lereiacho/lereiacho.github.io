@@ -61,7 +61,7 @@ body {
     margin-top: 60px; /* Add margin to avoid overlapping with the fixed navbar */
 }
 
-.video-gallery video {
+.video-gallery iframe {
     width: 300px;
     height: auto;
 }
