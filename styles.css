@@ -64,6 +64,8 @@ body {
 .video-gallery iframe {
     width: 300px;
     height: auto;
+    border-radius: 10px; /* Add rounded corners to iframes */
+
 }
 
 .about-us {
