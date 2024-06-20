@@ -12,7 +12,7 @@ body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-.background-image {
+.background{
     position: fixed;
     top: 50%;
     left: 50%;
