@@ -1,0 +1,77 @@
+img, video {
+    border-radius: 10px; /* Adjust the value to increase or decrease the roundness */
+}
+
+/* Make the website less square */
+body {
+    color: #FFFFFF; /* Set text color to black for readability */
+    margin: 0;
+    padding: 50px;
+    min-height: 100vh; /* Use min-height to ensure content height */
+    background-color: #000000; /* Fallback background color */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.background-image{
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('lereiacho_logo.png'); /* Replace 'your-image.jpg' with the path to your image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size : cover;
+    filter: blur(7px) brightness(40%); /* Adjust blur and brightness levels */
+    z-index: -1;
+}
+
+
+.navbar {
+    background-color: #FFFFFF;
+    overflow: hidden;
+    position: fixed; /* Fix the navbar at the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 20px;
+    margin-top: 60px; /* Add margin to avoid overlapping with the fixed navbar */
+}
+
+.video-gallery iframe {
+    width: 300px;
+    height: auto;
+    border-radius: 10px; /* Add rounded corners to iframes */
+}
+
+.about-us {
+    padding: 20px;
+    margin-top: 20px;
+}
